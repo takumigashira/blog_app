@@ -1,0 +1,12 @@
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<% if @user.avatar.attached? %>
+  <p>
+    <strong>Avatar:</strong>
+    <%= image_tag @user.avatar %>
+  </p>
+<% end %>
+
