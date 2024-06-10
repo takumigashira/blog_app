@@ -5,3 +5,4 @@ class User < ApplicationRecord
     avatar.variant(resize: "100x100").processed
   end
 end
+

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :image_posts
+  get 'users/index'
+  get 'users/show'
+  get 'users/new'
+  get 'users/edit'
   resources :posts
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -8,6 +13,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root 'posts#index'
-  resource :posts
+  root 'image_posts#index'
+  resource :image_posts
 end
